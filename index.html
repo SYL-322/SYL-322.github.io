@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Siyuan Li is a PhD student at the University of Alberta working on 3D and 4D reconstruction from monocular videos.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Siyuan Li</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="static/styles.css">
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play().catch(() => {});
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "100px 0px", threshold: 0.1 });
+      document.querySelectorAll("video.autoplay-video").forEach((video) => observer.observe(video));
+    });
+  </script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="intro" id="top">
+      <div class="profile-column">
+        <img class="profile-photo" src="static/media/profile.jpg" alt="Portrait of Siyuan Li">
+        <p class="profile-role">PhD student@UAlberta</p>
+        <p class="profile-email">Email: sli20 [at] ualberta [dot] ca</p>
+        <p class="photo-links">
+          <a href="https://scholar.google.com/citations?user=VDdxTw8AAAAJ&amp;hl" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/in/siyuan-li-a7a90829a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="mailto:sli20@ualberta.ca" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        </p>
+      </div>
+      <div class="intro-copy">
+        <h1>Siyuan Li</h1>
+        <p>
+          I am a Ph.D. student in Electrical and Computer Engineering at the University of Alberta, advised by <a href="https://vision-and-learning-lab-ualberta.github.io/author/li-cheng/" target="_blank" rel="noopener noreferrer">Dr. Li Cheng</a> and <a href="https://www.ece.ualberta.ca/~xingyu/index.html" target="_blank" rel="noopener noreferrer">Dr. Xingyu Li</a>.
+        </p>
+        <p>
+          My research focuses on 3D and 4D reconstruction and generation, particularly on recovering the shape, appearance, and motion of dynamic objects from monocular in-the-wild videos. Recently, I have been working on 4D animal reconstruction using 3D Gaussian Splatting.
+        </p>
+        <p>
+          Before starting my Ph.D., I worked at Tencent ARC on video understanding, depth estimation, and image enhancement. I received my M.Eng. from Harbin Institute of Technology through a joint graduate program with Southern University of Science and Technology (SUSTech), and my B.Eng. from SUSTech.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section" id="selected-project">
+      <h2>Featured Project</h2>
+      <article class="project-block">
+        <div class="project-media">
+          <video class="project-video autoplay-video" muted loop playsinline preload="metadata">
+            <source src="static/media/goldfish.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-copy">
+          <h3>Progressive Pose-Guided 4D Animal Reconstruction from Monocular Video</h3>
+          <p class="authors"><strong>Siyuan Li</strong>, Weiying Chen, Yilin Wang, Xinxin Zuo, Xingyu Li, Li Cheng</p>
+          <p>A progressive test-time optimization framework for reconstructing high-fidelity 4D animals from a single monocular video. The method disentangles articulated pose and non-rigid deformation, generalizing across species with strong visual fidelity.</p>
+          <p class="project-meta-links">In ECCV, 2026. <a href="https://arxiv.org/abs/2607.00157" target="_blank" rel="noopener noreferrer">Paper</a> <a href="project_page/index.html">Project</a> <a href="https://github.com/SYL-322/ReWild4D" target="_blank" rel="noopener noreferrer">Code</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-section" id="publications">
+      <h2>Publications</h2>
+      <p class="section-note">Check my Google Scholar page for the most up-to-date list.</p>
+
+      <article class="publication-entry">
+        <h3>Progressive Pose-Guided 4D Animal Reconstruction from Monocular Video</h3>
+        <p><strong>Siyuan Li</strong>, Weiying Chen, Yilin Wang, Xinxin Zuo, Xingyu Li, Li Cheng</p>
+        <p>European Conference on Computer Vision (ECCV), 2026</p>
+        <p class="link-row"><a href="https://arxiv.org/abs/2607.00157" target="_blank" rel="noopener noreferrer">Paper</a> <a href="project_page/index.html">Project</a> <a href="https://github.com/SYL-322/ReWild4D" target="_blank" rel="noopener noreferrer">Code</a></p>
+      </article>
+
+      <article class="publication-entry">
+        <h3>UBone3D: Physics-Rectified Conditional Flow Matching for Anatomical 3D Shape Completion from Ultrasound</h3>
+        <p>Weiying Chen, Yuchong Gao, <strong>Siyuan Li</strong>, Marek Reformat, Rui Zheng, Edmond Lou</p>
+        <p>European Conference on Computer Vision (ECCV), 2026</p>
+        <p class="link-row"><span class="coming-soon">Paper and project page coming soon</span></p>
+      </article>
+
+      <article class="publication-entry">
+        <h3>UMT: Unified Multi-modal Transformers for Joint Video Moment Retrieval and Highlight Detection</h3>
+        <p>Ye Liu, <strong>Siyuan Li</strong>, Yang Wu, Chang Wen Chen, Ying Shan, Xiaohu Qie</p>
+        <p>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022</p>
+        <p class="link-row"><a href="https://arxiv.org/abs/2203.12745" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/TencentARC/UMT" target="_blank" rel="noopener noreferrer">Code</a></p>
+      </article>
+
+      <article class="publication-entry">
+        <h3>Enforcing Temporal Consistency in Video Depth Estimation</h3>
+        <p><strong>Siyuan Li</strong>, Yue Luo, Ye Zhu, Xun Zhao, Yu Li, Ying Shan</p>
+        <p>Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), 2021</p>
+        <p class="link-row"><a href="https://openaccess.thecvf.com/content/ICCV2021W/PBDL/papers/Li_Enforcing_Temporal_Consistency_in_Video_Depth_Estimation_ICCVW_2021_paper.pdf" target="_blank" rel="noopener noreferrer">Paper</a> <a href="https://github.com/yu-li/TCMonoDepth" target="_blank" rel="noopener noreferrer">Code</a></p>
+      </article>
+
+      <article class="publication-entry">
+        <h3>Deep Multi-path Low-light Image Enhancement</h3>
+        <p><strong>Siyuan Li</strong>, Qingsha S. Cheng, Jianguo Zhang</p>
+        <p>IEEE Conference on Multimedia Information Processing and Retrieval (MIPR), 2020</p>
+        <p class="link-row"><a href="https://doi.org/10.1109/MIPR49039.2020.00025" target="_blank" rel="noopener noreferrer">Paper</a></p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
