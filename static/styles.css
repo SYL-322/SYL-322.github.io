@@ -135,6 +135,12 @@ h3 {
 
 .authors { color: #444; }
 .project-meta-links { margin-bottom: 0 !important; }
+.oral-note {
+  display: inline-block;
+  margin-left: 8px;
+  color: #b33d2e;
+  font-weight: 600;
+}
 .project-meta-links > a:first-of-type { margin-left: 14px; }
 .section-note { color: #555; margin-bottom: 22px; }
 .publication-entry { margin-bottom: 28px; }
